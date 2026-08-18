@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mini POS Kopi D'Lima</title>
+    <title>Mini POS Kopi Rimba</title>
     <style>
         /* --- RESET & BASE --- */
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -99,7 +99,7 @@
 <body>
 
 <div class="header">
-    <div class="brand-sub">KOPI D'LIMA</div>
+    <div class="brand-sub">KOPI DLIMA</div>
     <h1 class="brand-main">Sistem Laporan Harian</h1>
 </div>
 
@@ -116,7 +116,7 @@
             </div>
             <div class="profile-meta">
                 <span>🕒 <strong id="live-clock">--:--:--</strong></span>
-                <span>📍 <strong>Kopi Rimba Mazboy</strong></span>
+                <span>📍 <strong>Kopi Dlima</strong></span>
             </div>
         </div>
         <div class="card card-input-area">
@@ -334,7 +334,7 @@
 // 1. KONFIGURASI & STATE
 // ==========================================
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzbqVbj5FRYut1HAExPsTxT6wFnwqOJLmo_9HROJZQXdUY6DuxpF6_W9JTAVXmHneTjMQ/exec";
-const ADMIN = "6285775530078";
+const ADMIN = "628577550078";
 const MENUS = [
     {label:"Americano Ice",harga:6000},{label:"Americano Double",harga:8000},
     {label:"Coffee Milk",harga:7000},{label:"Coffee Aren",harga:8000},
@@ -836,7 +836,7 @@ async function checkout() {
     
     await sendToSheet(payload);
 
-    let teks = `*LAPORAN KOPI RIMBA*\n👤 ${nama}\n🏠 ${outlet || '-'}\n📅 ${fmtDate(nowTime)}\n━━━━━━━━━━━━\n\n`;
+    let teks = `*LAPORAN KOPI DLIMA*\n👤 ${nama}\n🏠 ${outlet || '-'}\n📅 ${fmtDate(nowTime)}\n━━━━━━━━━━━━\n\n`;
     
     teks += `*LAPORAN KEUANGAN TUNAI:*\n`;
     teks += `💼 Modal Awal: Rp ${modalAwal.toLocaleString('id-ID')}\n`;
